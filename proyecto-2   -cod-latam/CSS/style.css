@@ -1,0 +1,246 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* Estilos generales */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    background-color: #fbfbfb;
+    color: #0f0f0f;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+p {
+    margin: 16px 0;
+}
+
+/* Para prevenir que las imágenes "rompan" la página */
+img {
+    max-width: 100%;
+    display: flex;
+
+
+}
+
+
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    height: 90px;
+    width: 100%;
+    background-color: #fbfbfb;
+    /* Para que quede fijo en la ventana */
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* Para agregarle una sombra */
+    box-shadow: 0 3px 10px -5px #5f5f5f;
+}
+
+.logo {
+    
+    width: 120px;
+
+}
+
+
+/* Main */
+
+main {
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    min-height: 100vh;
+
+    
+    /* lugar para el header */
+    padding-top: 120px;
+}
+
+
+/* Sección Inicio */
+#inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .presentacion-img {
+    margin-bottom: 20px;
+   
+  }
+  
+  .presentacion-img img {
+    
+    max-width: 100%;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 500px;   
+    margin-top: -50px;
+
+  }
+  
+  .presentacion h1 {
+    margin-bottom: 10px;
+
+  }
+  
+  .presentacion p {
+    margin-bottom: 20px;
+  }
+
+
+article.presentacion {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    text-align: center;
+    align-items: center;
+     margin-top: -400px;
+}
+
+
+article.presentacion h1 {
+  margin-bottom: auto;
+  flex-direction: column;
+}
+
+a.btn {
+    background-color: #af599e;
+    color: #fbfbfb;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    display: inline-block;
+}
+
+/* Sección Contacto */
+section#contacto p {
+    text-align: center;
+}
+
+ul#contact-links {
+    display: flex;
+    margin-top: -20px;
+}
+
+ul#contact-links li {
+    margin: 16px;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+img.icon {
+    width: 60px;
+}
+
+
+/* Footer */
+footer {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #af599e;
+    color: #fbfbfb;
+}
+
+/* Menú de navegación */
+ul#menu {
+    display: flex;
+    font-size: 20px;
+}
+
+li.menu-item a {
+    padding: 16px;
+    display: inline-block;
+}
+
+li.menu-item a:active{
+    color:rgb(0, 0, 0);
+    display: inline-block;
+
+}
+
+
+/* desktop*/
+@media (min-width: 800px) {
+    section {
+        flex-direction: row;
+        
+    }  
+     
+    h1 {
+        font-size: 50px;
+    }   
+
+ } 
+    
+  
+  /* Transiciones de movimiento para el botón de descarga del CV */
+.btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #098ad5;;
+    transform: scale(1.1);
+  }
+
+
+ /* Estilos de movimiento al pasar el cursor */
+
+a[href="#inicio"]:hover,
+a[href="#contacto"]:hover {
+  transform: scale(1.1);
+  color: #098ad5;
+  transition: transform 0.3s ease, color 0.3s ease;
+
+}
+
+  
+
+  
